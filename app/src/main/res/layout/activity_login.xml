@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context="com.liyunkun.week9_1mvp_qqmusic.showMusic.view.activity.LoginActivity">
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon"
+        android:layout_marginTop="128dp"
+        android:layout_width="128dp"
+        android:layout_height="128dp" />
+    <TextView
+        android:textSize="24sp"
+        android:textColor="@color/baise"
+        android:text="QQ音乐"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/icon"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:background="@drawable/login_btn_bg"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="48dp">
+        <ImageView
+            android:src="@drawable/login_icon_qq"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+        <TextView
+            android:text="QQ登录"
+            android:textColor="@color/baise"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

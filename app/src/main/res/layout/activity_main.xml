@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".showMusic.view.activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary2">
+
+        <ImageView
+            android:id="@+id/iv_home"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/maintabbar_button_setting_highlight" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/maintabbar_button_search_highlight" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="true"
+                android:padding="5dp"
+                android:text="我的"
+                android:textColor="@color/baise"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rb_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:button="@null"
+                android:checked="true"
+                android:padding="5dp"
+                android:text="音乐馆"
+                android:textColor="@color/MainRbTextColor"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rb_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:button="@null"
+                android:checked="true"
+                android:padding="5dp"
+                android:text="发现"
+                android:textColor="@color/MainRbTextColor"
+                android:textSize="18sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/play_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/baise">
+
+        <org.lenve.customshapeimageview.CustomShapeImageView
+            android:id="@+id/iv_music_face"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/defualt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_music_face"
+            android:layout_toRightOf="@id/iv_music_face"
+            android:text="左右横划可切换上下首"
+            android:textColor="@color/colorPrimary2" />
+
+        <ImageView
+            android:id="@+id/playlist_iv"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentRight="true"
+            android:padding="6dp"
+            android:src="@drawable/minibar_btn_playlist_normal" />
+
+        <ImageView
+            android:id="@+id/player_btn"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_toLeftOf="@id/playlist_iv"
+            android:padding="2dp"
+            android:src="@drawable/landscape_player_btn_play_normal" />
+        <TextView
+            android:id="@+id/music_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_music_face"
+            android:layout_toLeftOf="@id/player_btn"
+            android:layout_toRightOf="@id/iv_music_face"
+            android:text="爱的就是你"
+            android:textColor="@color/tvColor" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/play_layout"
+        android:layout_below="@id/layout" />
+</RelativeLayout>

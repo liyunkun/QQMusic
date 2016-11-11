@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<fragment
+    android:layout_weight="1"
+    android:id="@+id/rank_left_fg"
+    android:name="com.liyunkun.week9_1mvp_qqmusic.showMusic.view.fragment.RankLeftFragment"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"/>
+
+    <fragment
+        android:id="@+id/rank_right_fg"
+        android:name="com.liyunkun.week9_1mvp_qqmusic.showMusic.view.fragment.RankRightFragment"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+    <ImageView
+        android:id="@+id/music_face"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/defualt" />
+
+    <ImageView
+        android:padding="2dp"
+        android:id="@+id/nf_close_btn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/btn_close_load_lyric_light" />
+
+    <ImageView
+        android:padding="2dp"
+        android:id="@+id/nf_word_btn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/nf_close_btn"
+        android:src="@drawable/btn_notification_player_lyric_off_normal" />
+
+    <ImageView
+        android:id="@+id/nf_next_btn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/nf_word_btn"
+        android:padding="2dp"
+        android:src="@drawable/btn_notification_player_next_normal" />
+
+    <ImageView
+        android:padding="2dp"
+        android:id="@+id/nf_stop_btn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/nf_next_btn"
+        android:src="@drawable/btn_notification_player_stop_normal" />
+
+    <TextView
+        android:id="@+id/nf_music_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/nf_stop_btn"
+        android:layout_toRightOf="@id/music_face"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="歌曲名"
+        android:textColor="@color/baise"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/singerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/nf_music_name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@id/nf_stop_btn"
+        android:layout_toRightOf="@id/music_face"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="歌手" />
+</RelativeLayout>
